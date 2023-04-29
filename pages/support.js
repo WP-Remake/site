@@ -11,9 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className={styles.title}>
-          Welcome to <Link href="/support">this page!</Link>
-        </h1>
+        <h1 className={styles.title}>Welcome to Support</h1>
 
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>

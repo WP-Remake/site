@@ -15,10 +15,8 @@ export default function Home() {
 				<div className="support-message-container">
 					<p className="support-message">
 						Please email us at{' '}
-						<a href="mailto:support.wp_remake@gmail.com">
-							wp_remake.support@gmail.com
-						</a>{' '}
-						for support.
+						<a href="mailto:wpremake@gmail.com">wpremake@gmail.com</a> for
+						support.
 					</p>
 				</div>
 			</Content>

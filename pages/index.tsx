@@ -1,8 +1,8 @@
 import { AppHead } from '../components/AppHead';
+import Content from '../components/Content';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import styles from '../styles/Home.module.css';
-import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -12,7 +12,7 @@ export default function Home() {
 			</AppHead>
 			<Header activeMenu="home" />
 
-			<main className="site-page-content">
+			<Content>
 				<div className="plugins-list">
 					<div className="item">
 						<a href="#" className={styles.card}>
@@ -35,33 +35,10 @@ export default function Home() {
 						</a>
 					</div>
 				</div>
-			</main>
+			</Content>
 
 			<style jsx>
 				{`
-					.site-page-content {
-						max-width: 1160px;
-						margin-left: auto;
-						margin-right: auto;
-						padding: 80px 0;
-					}
-
-					@media (min-width: 768px) {
-						site-page-content {
-							max-width: 750px;
-						}
-					}
-					@media (min-width: 992px) {
-						site-page-content {
-							max-width: 940px;
-						}
-					}
-					@media (min-width: 1200px) {
-						site-page-content {
-							max-width: 1160px;
-						}
-					}
-
 					.plugins-list .item > a {
 						padding-bottom: 45px;
 					}
@@ -71,7 +48,10 @@ export default function Home() {
 						font-weight: bold;
 						display: inline-block;
 						margin-top: 16px;
-						border-bottom: 1px solid #0070f3;
+						border-bottom: 2px solid transparent;
+					}
+					.plugins-list .item > a:hover .read-more {
+						border-bottom: 2px solid #0070f3;
 					}
 				`}
 			</style>

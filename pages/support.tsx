@@ -1,8 +1,7 @@
-import styles from '../styles/Home.module.css';
-import Link from 'next/link';
 import { AppHead } from '../components/AppHead';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Content from '../components/Content';
 
 export default function Home() {
 	return (
@@ -12,60 +11,38 @@ export default function Home() {
 			</AppHead>
 			<Header activeMenu="support" />
 
-			<main>
-				<h1 className={styles.title}>Welcome to Support</h1>
-
-				<p className={styles.description}>
-					Get started by editing <code>pages/index.js</code>
-				</p>
-
-				<div className={styles.grid}>
-					<a href="https://nextjs.org/docs" className={styles.card}>
-						<h3>Documentation &rarr;</h3>
-						<p>Find in-depth information about Next.js features and API.</p>
-					</a>
-
-					<a href="https://nextjs.org/learn" className={styles.card}>
-						<h3>Learn &rarr;</h3>
-						<p>Learn about Next.js in an interactive course with quizzes!</p>
-					</a>
-
-					<a
-						href="https://github.com/vercel/next.js/tree/master/examples"
-						className={styles.card}>
-						<h3>Examples &rarr;</h3>
-						<p>Discover and deploy boilerplate example Next.js projects.</p>
-					</a>
-
-					<a
-						href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-						className={styles.card}>
-						<h3>Deploy &rarr;</h3>
-						<p>
-							Instantly deploy your Next.js site to a public URL with Vercel.
-						</p>
-					</a>
+			<Content>
+				<div className="support-message-container">
+					<p className="support-message">
+						Please email us at{' '}
+						<a href="mailto:support.wp_remake@gmail.com">
+							wp_remake.support@gmail.com
+						</a>{' '}
+						for support.
+					</p>
 				</div>
-			</main>
+			</Content>
 
 			<Footer />
 
 			<style jsx>{`
-				main {
-					padding: 5rem 0;
-					flex: 1;
+				.support-message-container {
 					display: flex;
 					flex-direction: column;
-					justify-content: center;
 					align-items: center;
 				}
-				code {
-					background: #fafafa;
-					border-radius: 5px;
-					padding: 0.75rem;
-					font-size: 1.1rem;
-					font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-						DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+
+				.support-message {
+					font-size: 18px;
+				}
+
+				a {
+					color: #0070f3;
+					font-size: 18px;
+					font-weight: bold;
+					display: inline-block;
+					margin-top: 16px;
+					text-decoration: none;
 				}
 			`}</style>
 		</div>

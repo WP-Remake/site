@@ -1,114 +1,82 @@
+import { AppHead } from '../components/AppHead';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
-import { AppHead } from '../components/AppHead';
 
 export default function Home() {
 	return (
-		<div className={styles.container}>
-			<AppHead />
+		<div>
+			<AppHead>
+				<title>WP Remake</title>
+			</AppHead>
+			<Header activeMenu="home" />
 
-			<header className="site-header">
-				<div></div>
-			</header>
-
-			<main>
-				<h1 className={styles.title}>
-					Welcome to <Link href="/support">this page!</Link>
-				</h1>
-
-				<p className={styles.description}>
-					Get started by editing <code>pages/index.js</code>
-				</p>
-
-				<div className={styles.grid}>
-					<a href="https://nextjs.org/docs" className={styles.card}>
-						<h3>Documentation &rarr;</h3>
-						<p>Find in-depth information about Next.js features and API.</p>
-					</a>
-
-					<a href="https://nextjs.org/learn" className={styles.card}>
-						<h3>Learn &rarr;</h3>
-						<p>Learn about Next.js in an interactive course with quizzes!</p>
-					</a>
-
-					<a
-						href="https://github.com/vercel/next.js/tree/master/examples"
-						className={styles.card}>
-						<h3>Examples &rarr;</h3>
-						<p>Discover and deploy boilerplate example Next.js projects.</p>
-					</a>
-
-					<a
-						href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-						className={styles.card}>
-						<h3>Deploy &rarr;</h3>
-						<p>
-							Instantly deploy your Next.js site to a public URL with Vercel.
-						</p>
-					</a>
+			<main className="site-page-content">
+				<div className="plugins-list">
+					<div className="item">
+						<a href="#" className={styles.card}>
+							<div className="column-1">
+								<div className="thumbnail">
+									<img src="/pibw-logo-white-bg.png" alt="" width="200px" />
+								</div>
+							</div>
+							<div className="column-2">
+								<h3>PDF Invoice Builder for WooCommerce</h3>
+								<p>
+									Eu minim deserunt et magna. In anim enim reprehenderit dolore
+									consequat id voluptate velit deserunt esse. Voluptate duis
+									sunt nisi sit aliqua in cillum anim reprehenderit labore.
+									Deserunt adipisicing culpa proident qui culpa. Reprehenderit
+									aliquip officia est cupidatat fugiat magna Lorem duis nostrud.
+								</p>
+								<span className="read-more">Read More</span>
+							</div>
+						</a>
+					</div>
 				</div>
 			</main>
 
-			<footer>
-				<a
-					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer">
-					Powered by{' '}
-					<img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-				</a>
-			</footer>
+			<style jsx>
+				{`
+					.site-page-content {
+						max-width: 1160px;
+						margin-left: auto;
+						margin-right: auto;
+						padding: 80px 0;
+					}
 
-			<style jsx>{`
-				main {
-					padding: 5rem 0;
-					flex: 1;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-				}
-				footer {
-					width: 100%;
-					height: 100px;
-					border-top: 1px solid #eaeaea;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
-				footer img {
-					margin-left: 0.5rem;
-				}
-				footer a {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					text-decoration: none;
-					color: inherit;
-				}
-				code {
-					background: #fafafa;
-					border-radius: 5px;
-					padding: 0.75rem;
-					font-size: 1.1rem;
-					font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-						DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-				}
-			`}</style>
+					@media (min-width: 768px) {
+						site-page-content {
+							max-width: 750px;
+						}
+					}
+					@media (min-width: 992px) {
+						site-page-content {
+							max-width: 940px;
+						}
+					}
+					@media (min-width: 1200px) {
+						site-page-content {
+							max-width: 1160px;
+						}
+					}
 
-			<style jsx global>{`
-				html,
-				body {
-					padding: 0;
-					margin: 0;
-					font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-						Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-						sans-serif;
-				}
-				* {
-					box-sizing: border-box;
-				}
-			`}</style>
+					.plugins-list .item > a {
+						padding-bottom: 45px;
+					}
+					.plugins-list .item > a .read-more {
+						color: #0070f3;
+						font-size: 18px;
+						font-weight: bold;
+						display: inline-block;
+						margin-top: 16px;
+						border-bottom: 1px solid #0070f3;
+					}
+				`}
+			</style>
+
+			<Footer />
 		</div>
 	);
 }

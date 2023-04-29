@@ -3,7 +3,6 @@ import Content from '../components/Content';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import styles from '../styles/Home.module.css';
-import Image from 'next/image';
 
 export default function Home() {
 	return (
@@ -19,11 +18,10 @@ export default function Home() {
 						<a href="#" className={styles.card}>
 							<div className="column-1">
 								<div className="thumbnail">
-									<Image
-										src="/pibw-logo-white-bg.png"
+									<img
+										src="/site/pibw-logo-white-bg.png"
 										alt="pdf invoice builder logo"
 										width={200}
-										height={200}
 									/>
 								</div>
 							</div>

@@ -69,13 +69,14 @@ export default function Home() {
 								allowFullScreen></iframe>
 
 							<p>
-								PDF Invoice Builder for WooCommerce enables you to build
-								invoices and packing slips into works of art with complete
-								control over layout and styles. You can design your invoices and
-								packing slips through the Gutenberg block editor which provides
-								a user-friendly drag-and-drop system with blocks. This plugin
-								also provides dynamic tags to show any necessary data you want.
-								It also comes equipped with gorgeous pre-built templates to
+								<strong>PDF Invoice Builder for WooCommerce</strong> enables you
+								to build invoices and packing slips into works of art with
+								complete control over layout and styles. You can design your
+								invoices and packing slips through the{' '}
+								<strong>Gutenberg block editor</strong> which provides a
+								user-friendly drag-and-drop system with blocks. This plugin also
+								provides dynamic tags to show any necessary data you want. It
+								also comes equipped with gorgeous pre-built templates to
 								streamline the design process.
 							</p>
 						</div>

@@ -5,12 +5,6 @@ body {
 	font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
 		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
 * {
 	box-sizing: border-box;
 }
@@ -32,12 +26,9 @@ ul {
 	list-style: none;
 }
 
-button {
-	padding: 0.5rem 1rem;
-	font-weight: bold;
-}
 a {
-	color: #0070f3;
+	text-decoration: none;
+	color: #267691;
 }
 
 .plugin-item {
@@ -63,7 +54,7 @@ a {
 	color: black;
 }
 .plugin-item .title:hover {
-	color: #0070f3;
+	color: #267691;
 }
 .plugin-item .description {
 	margin: 0;
@@ -79,5 +70,32 @@ a {
 	text-decoration: none;
 }
 .plugin-item .read-more:hover {
-	border-bottom: 2px solid #0070f3;
+	border-bottom: 2px solid #267691;
+}
+
+.btn {
+	align-items: center;
+	background: 0 0;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	line-height: 24px;
+	margin: 0;
+	padding: 4px 16px;
+	position: relative;
+	text-align: center;
+	text-transform: none !important;
+}
+.btn.primary {
+	background: #267691;
+	color: #fff !important;
+	border: 2px solid #267691;
+}
+.btn.secondary {
+	background: transparent;
+	border: 2px solid #267691;
+	color: #267691 !important;
 }

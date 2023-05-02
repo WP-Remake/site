@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { AppHead } from '../components/AppHead';
 import Content from '../components/Content';
 import Footer from '../components/Footer';
@@ -18,18 +19,16 @@ export default function Home() {
 				<div className="plugins-list">
 					<div className="plugin-item">
 						<div className="column-1">
-							<div className="thumbnail">
-								<img
-									src="/site/pibw-logo-white-bg.png"
-									alt="pdf invoice builder logo"
-									className="thumbnail"
-								/>
-							</div>
+							<img
+								src="/site/pibw-logo-white-bg.png"
+								alt="pdf invoice builder logo"
+								className="thumbnail"
+							/>
 						</div>
 						<div className="column-2">
-							<a href="#">
-								<h3 className="title">PDF Invoice Builder for WooCommerce</h3>
-							</a>
+							<Link href="/pdf-invoice-builder-for-woocommerce">
+								<h2 className="title">PDF Invoice Builder for WooCommerce</h2>
+							</Link>
 							<p className="description">
 								With this powerful WooCommerce extension, you can easily design
 								custom invoices and packing slips with any layout you desire,
@@ -40,9 +39,11 @@ export default function Home() {
 								packing slip creation process, saving you valuable time. Try our
 								plugin today and take your invoicing to the next level!
 							</p>
-							<a href="#" className="read-more">
+							<Link
+								href="/pdf-invoice-builder-for-woocommerce"
+								className="read-more">
 								Read More
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -61,6 +62,9 @@ export default function Home() {
 						background: -webkit-linear-gradient(45deg, black, #267691 80%);
 						-webkit-background-clip: text;
 						-webkit-text-fill-color: transparent;
+					}
+					.plugins-list {
+						margin-bottom: 150px;
 					}
 				`}
 			</style>

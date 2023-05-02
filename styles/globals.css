@@ -36,3 +36,48 @@ button {
 	padding: 0.5rem 1rem;
 	font-weight: bold;
 }
+a {
+	color: #0070f3;
+}
+
+.plugin-item {
+	margin: 1rem;
+	padding: 1.5rem;
+	text-align: left;
+	color: inherit;
+	text-decoration: none;
+	border: 1px solid #eaeaea;
+	border-radius: 10px;
+	transition: color 0.15s ease, border-color 0.15s ease;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 45px;
+}
+.plugin-item .thumbnail {
+	width: 200px;
+	min-width: 200px;
+}
+.plugin-item .title {
+	margin: 20px 0 1rem 0;
+	font-size: 1.5rem;
+	color: black;
+}
+.plugin-item .title:hover {
+	color: #0070f3;
+}
+.plugin-item .description {
+	margin: 0;
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+.plugin-item .read-more {
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 16px;
+	border-bottom: 2px solid transparent;
+	text-decoration: none;
+}
+.plugin-item .read-more:hover {
+	border-bottom: 2px solid #0070f3;
+}

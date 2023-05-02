@@ -9,7 +9,7 @@ export default function Content(props) {
 						max-width: 1160px;
 						margin-left: auto;
 						margin-right: auto;
-						padding: 80px 0;
+						padding: 0;
 					}
 
 					@media (min-width: 768px) {

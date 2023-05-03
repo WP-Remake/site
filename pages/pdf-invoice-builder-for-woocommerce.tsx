@@ -3,6 +3,7 @@ import { AppHead } from '../components/AppHead';
 import Content from '../components/Content';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Script from 'next/script';
 
 export default function Home() {
 	return (
@@ -10,6 +11,10 @@ export default function Home() {
 			<AppHead>
 				<title>PDF Invoice Builder for WooCommerce - WP Remake</title>
 			</AppHead>
+			<Script src="https://code.jquery.com/jquery-1.12.4.min.js"></Script>
+			<Script src="https://checkout.freemius.com/checkout.min.js"></Script>
+			<Script src="/site/freemius-integration.js"></Script>
+
 			<Header />
 
 			<Content>

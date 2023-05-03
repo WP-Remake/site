@@ -22,7 +22,7 @@ export default function Home() {
 						</a>
 					</span>
 				</div>
-				<div className="wrapper">
+				<div className="main-section">
 					<div className="column-1">
 						<div className="banner-section">
 							<img
@@ -83,19 +83,29 @@ export default function Home() {
 					</div>
 					<div className="column-2">
 						<div className="sidebar-card">
+							<div className="price-section">
+								<div className="monthly-price">
+									<span className="text price">$9.99</span>
+									<span className="text month">/ month</span>
+								</div>
+								<div className="yearly-price">
+									<span className="text">Annual subscription for $99.99</span>
+								</div>
+							</div>
+							<button id="purchase" className="btn primary">
+								Buy Now
+							</button>
+						</div>
+						<div className="sidebar-card">
+							<button disabled className="btn secondary docs-link">
+								Documentation (Under Construction)
+							</button>
 							<a
 								href="https://trello.com/b/ZW28O6U0/pdf-invoice-builder-for-woocommerce"
-								className="btn primary"
-								target="_blank"
-								rel="noopener noreferrer">
-								Roadmap
-							</a>
-							<a
-								href="#"
 								className="btn secondary"
 								target="_blank"
 								rel="noopener noreferrer">
-								Documentation
+								Roadmap
 							</a>
 						</div>
 					</div>
@@ -117,12 +127,13 @@ export default function Home() {
 						margin-right: 4px;
 					}
 
-					.wrapper {
+					.main-section {
 						display: flex;
 						margin-top: 50px;
+						margin-bottom: 100px;
 					}
 
-					.wrapper > .column-2 {
+					.main-section > .column-2 {
 						min-width: 350px;
 						width: 350px;
 						max-width: 350px;
@@ -188,7 +199,28 @@ export default function Home() {
 						margin-bottom: 30px;
 					}
 					.sidebar-card > *:not(:last-child) {
-						margin-bottom: 8px;
+						margin-bottom: 18px;
+					}
+					.sidebar-card > button {
+						width: 100%;
+					}
+					.sidebar-card .docs-link {
+						color: gray !important;
+						border-color: gray;
+					}
+
+					.price-section .monthly-price .price {
+						font-size: 36px;
+						font-weight: 700;
+					}
+					.price-section .monthly-price .month {
+						font-size: 16px;
+						font-weight: 700;
+					}
+					.price-section .yearly-price .text {
+						font-size: 15px;
+						color: #31363a;
+						line-height: 20px;
 					}
 				`}
 			</style>

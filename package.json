@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@bradgarropy/next-google-analytics": "^1.0.2",
     "classnames": "^2.3.2",
     "next": "latest",
     "prettier-plugin-organize-imports": "^3.2.2",

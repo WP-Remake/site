@@ -1,4 +1,9 @@
 setTimeout(() => {
+	if (!window.FS) {
+		console.error('Freemius library not loaed!');
+		return;
+	}
+
 	var handler = FS.Checkout.configure({
 		plugin_id: '12611',
 		plan_id: '21289',

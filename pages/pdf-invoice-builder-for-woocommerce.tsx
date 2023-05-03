@@ -11,9 +11,6 @@ export default function Home() {
 			<AppHead>
 				<title>PDF Invoice Builder for WooCommerce - WP Remake</title>
 			</AppHead>
-			<Script src="https://code.jquery.com/jquery-1.12.4.min.js"></Script>
-			<Script src="https://checkout.freemius.com/checkout.min.js"></Script>
-			<Script src="/site/freemius-integration.js"></Script>
 
 			<Header />
 
@@ -116,6 +113,12 @@ export default function Home() {
 					</div>
 				</div>
 			</Content>
+
+			<Script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></Script>
+			<Script
+				src="https://checkout.freemius.com/checkout.min.js"
+				defer></Script>
+			<Script src="/site/freemius-integration.js" defer></Script>
 
 			<style jsx>
 				{`

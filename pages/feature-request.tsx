@@ -3,20 +3,20 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
 
-export default function Support() {
+export default function FeatureRequest() {
 	return (
 		<div>
 			<AppHead>
-				<title>Support - WP Remake</title>
+				<title>Feature Request - WP Remake</title>
 			</AppHead>
-			<Header activeMenu="support" />
+			<Header activeMenu="feature-request" />
 
 			<Content>
-				<div className="support-message-container">
-					<p className="support-message">
+				<div className="feature-request-message-container">
+					<p className="feature-request-message">
 						Please email us at{' '}
-						<a href="mailto:wpremake@gmail.com">wpremake@gmail.com</a> for
-						support.
+						<a href="mailto:wpremake@gmail.com">wpremake@gmail.com</a> to
+						request a feature.
 					</p>
 				</div>
 			</Content>
@@ -24,14 +24,14 @@ export default function Support() {
 			<Footer />
 
 			<style jsx>{`
-				.support-message-container {
+				.feature-request-message-container {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
 					padding: 80px 0;
 				}
 
-				.support-message {
+				.feature-request-message {
 					font-size: 18px;
 				}
 

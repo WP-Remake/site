@@ -5,7 +5,9 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Script from 'next/script';
 
-export default function Home() {
+const random_number = Math.floor(Math.random() * 1000000000000) + 1; // Between 1 and 1000000000000
+
+export default function PIBW() {
 	return (
 		<div>
 			<AppHead>
@@ -84,7 +86,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="column-2">
-						<div className="sidebar-card">
+						{/* <div className="sidebar-card">
 							<div className="price-section">
 								<div className="monthly-price">
 									<span className="text price">$9.99</span>
@@ -97,28 +99,42 @@ export default function Home() {
 							<button id="purchase" className="btn primary">
 								Buy Now
 							</button>
-						</div>
+						</div> */}
 						<div className="sidebar-card">
-							<button disabled className="btn secondary docs-link">
-								Documentation (Under Construction)
-							</button>
 							<a
+								className="btn primary pibw-docs-link"
+								href="#"
+								target="_blank"
+								rel="noopener noreferrer">
+								Documentation
+							</a>
+							<a
+								className="btn secondary pibw-demo-link"
+								href="#"
+								target="_blank"
+								rel="noopener noreferrer">
+								Demo
+							</a>
+							{/* <a
 								href="https://trello.com/b/ZW28O6U0/pdf-invoice-builder-for-woocommerce"
 								className="btn secondary"
 								target="_blank"
 								rel="noopener noreferrer">
 								Roadmap
-							</a>
+							</a> */}
 						</div>
 					</div>
 				</div>
 			</Content>
 
-			<Script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></Script>
 			<Script
+				id="jquery-script"
+				src="https://code.jquery.com/jquery-1.12.4.min.js"></Script>
+			{/* <Script
 				src="https://checkout.freemius.com/checkout.min.js"
-				defer></Script>
-			<Script src="/site/freemius-integration.js" defer></Script>
+				defer></Script> */}
+			{/* <Script src="/site/freemius-integration.js" defer></Script> */}
+			<Script src={'/site/pibw.js?rand=' + random_number}></Script>
 
 			<style jsx>
 				{`
@@ -211,10 +227,6 @@ export default function Home() {
 					}
 					.sidebar-card > button {
 						width: 100%;
-					}
-					.sidebar-card .docs-link {
-						color: gray !important;
-						border-color: gray;
 					}
 
 					.price-section .monthly-price .price {

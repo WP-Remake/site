@@ -4,18 +4,15 @@ import Content from '../components/Content';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
-export default function Home() {
+export default function Plugins() {
 	return (
 		<div>
 			<AppHead>
-				<title>WP Remake</title>
+				<title>WP Remake - Plugins</title>
 			</AppHead>
-			<Header activeMenu="home" />
+			<Header activeMenu="plugins" />
 
 			<Content>
-				<div className="hero">
-					<h1 className="hero-message">We Create Amazing WordPress Plugins</h1>
-				</div>
 				<div className="plugins-list">
 					<div className="plugin-item">
 						<div className="column-1">

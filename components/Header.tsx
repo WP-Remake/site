@@ -48,11 +48,29 @@ const Header: React.FC<Props> = (props) => {
 								</li>
 								<li>
 									<Link
+										href="/plugins"
+										className={classNames({
+											active: activeMenu === 'plugins',
+										})}>
+										Plugins
+									</Link>
+								</li>
+								<li>
+									<Link
 										href="/support"
 										className={classNames({
 											active: activeMenu === 'support',
 										})}>
 										Support
+									</Link>
+								</li>
+								<li>
+									<Link
+										href="/feature-request"
+										className={classNames({
+											active: activeMenu === 'feature-request',
+										})}>
+										Feature Request
 									</Link>
 								</li>
 							</ul>

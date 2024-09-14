@@ -103,14 +103,14 @@ export default function PIBW() {
 						<div className="sidebar-card">
 							<a
 								className="btn primary pibw-docs-link"
-								href="#"
+								href="https://drive.google.com/file/d/1ZTlu0pd83cxrVWyWQx1gwPfj0hnwwkIz/view?usp=sharing"
 								target="_blank"
 								rel="noopener noreferrer">
 								Documentation
 							</a>
 							<a
 								className="btn secondary pibw-demo-link"
-								href="#"
+								href="https://drive.google.com/file/d/1ZTlu0pd83cxrVWyWQx1gwPfj0hnwwkIz/view?usp=sharing"
 								target="_blank"
 								rel="noopener noreferrer">
 								Demo

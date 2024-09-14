@@ -10,7 +10,7 @@ export function AppHead(props) {
 			/>
 			<meta
 				name="pibw-demo-url"
-				content="https://drive.google.com/file/d/1ZTlu0pd83cxrVWyWQx1gwPfj0hnwwkIz/view?usp=sharing"
+				content="https://restructuresky.s3-tastewp.com/"
 			/>
 			{props.children}
 		</Head>

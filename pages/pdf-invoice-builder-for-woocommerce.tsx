@@ -110,7 +110,7 @@ export default function PIBW() {
 							</a>
 							<a
 								className="btn secondary pibw-demo-link"
-								href="https://drive.google.com/file/d/1ZTlu0pd83cxrVWyWQx1gwPfj0hnwwkIz/view?usp=sharing"
+								href="https://restructuresky.s3-tastewp.com/"
 								target="_blank"
 								rel="noopener noreferrer">
 								Demo
